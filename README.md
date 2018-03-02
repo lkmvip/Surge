@@ -145,14 +145,14 @@ Shadowrocket：https://raw.githubusercontent.com/lhie1/Surge/master/Shadowrocket
 ---
 
 #### Features_Module
-* ##### Adblocker
+* ##### Ads
 ````
 关闭此功能将不再屏蔽广告
 ````
 
-* ##### IQIYI
+* ##### MITM
 ````
-开启此功能将会屏蔽爱奇艺视频广告（出现任何问题请关闭此功能）
+关闭此功能可能会无法拦截部分广告
 ````
 ---
 
@@ -256,7 +256,7 @@ Adguard：https://adguard.com/en/welcome.html
 
 🍎 Only： 管控苹果的流量；如果苹果某些服务直连困难，设其为代理，可能会改善一些问题：🍎 Only - 代理服务器
 
-建议 ： 🍃 Proxy - 代理服务器；🍂 Domestic - 🚀 Direct ；☁️ Others - 🚀 Direct；🍎 Only - 🚀 Direct / 代理服务器
+建议 ： 🍃 Proxy - 代理服务器；🍂 Domestic - 🚀 Direct ；☁️ Others - 🍃 Proxy ；🍎 Only - 🚀 Direct / 代理服务器
 ````
 
 #### 🚀 [混淆模式](https://github.com/breakwa11/shadowsocks-rss/blob/master/ssr.md)

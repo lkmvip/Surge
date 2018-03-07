@@ -1,6 +1,7 @@
 本次更新：
 
-Shadowrocket 用户不再必须运行 User Data
+增加：历史规则/本次规则 Lines 参照对比
+增加：Github 最新改动快捷查看
 
 
 微信公众号：墙洞说

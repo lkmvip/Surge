@@ -34,7 +34,7 @@ Configuration | Source
 ----|----
 Surge | [@lhie1](https://t.me/lhie1)
 Shadowrocket | [@lhie1](https://t.me/lhie1)
-Quantumult | [@WatanabeMayu](https://t.me/WatanabeMayu)
+Quantumult | [@Jacky Y](https://t.me/WatanabeMayu)
 
 ---
 

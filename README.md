@@ -12,7 +12,7 @@
 * [可实现功能](#function)
 * 导入方式
     * [URL](#url)
-    * [Workflow](#workflow)
+    * [Workflow](#workflow关注微信公众号墙洞说发送rule-即可获取最新-user-data--rule-ota)
     	* User Data
     	* Rule OTA
 * [证书的安装及信任](#mitm)
@@ -41,6 +41,7 @@ Quantumult | [@WatanabeMayu](https://t.me/WatanabeMayu)
 ### Function
 * 自动代理 / 全局代理
 * 解决本地 DNS 可能带来的干扰
+* 解决谷歌跳转问题
 * 可突破部分内网限制（公司、学校）
 * 拦截常用应用程序的行为分析
 * 拦截常用应用程序的数据统计

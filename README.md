@@ -338,7 +338,7 @@ Quantumult 采用 SSH 测速模式（22 端口）
 ````
 MitM 仅仅对预设的 Hostname 名单（公开/开源）内的地址进行 HTTPS 流量解密，不会造成安全问题，也几乎不会对性能/速度造成影响。
 MitM：https://zh.wikipedia.org/wiki/中间人攻击
-Surge MitM：https://medium.com/@Blankwonder/surge-mitm-5281d8ace79d
+Surge MitM：https://medium.com/@Blankwonder/5281d8ace79d
 ````
 
 #### 使用规则会影响免流（如：大王卡）吗？
@@ -397,9 +397,9 @@ ShadowsocksR (R)：http://omgib13x8.bkt.clouddn.com/ssr-win.7z
 
 #### 教程 / 说明：
 ````
-Surge for iOS：https://medium.com/@scomper/surge-配置文件-a1533c10e80b
+Surge for iOS：https://medium.com/@scomper/a1533c10e80b
     
-Surge for macOS：https://medium.com/@scomper/让人耳目一新的-surge-mac-2-0-bb7cf735b1b8
+Surge for macOS：https://medium.com/@scomper/bb7cf735b1b8
     
 Shadowrocket for iOS：http://matrix.sspai.com/p/c113cba0
     

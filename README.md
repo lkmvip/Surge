@@ -18,10 +18,10 @@
 * [证书的安装及信任](#mitm)
 * [Android SSR ACL](#android-ssr-acl)
 * [浏览器广告](#browser-ad)
-* [联系方式](#line)
+* [联系方式](#联系方式)
 * [Q&A](#qa)
 * [客户端](#客户端有r标示表示支持-ssr)
-* [教程/说明](#教程-/-说明)
+* [教程/说明](#教程--说明)
 * [配置文件样例](#配置文件样例)
 * [鸣谢](#鸣谢)
 * [License](#license)
@@ -195,7 +195,7 @@ macOS：
 
 ---
 
-### line
+### 联系方式
 
 微博：[lhie1](http://weibo.com/1748625493)
 
@@ -240,7 +240,7 @@ Adguard：https://adguard.com/en/welcome.html
 
 ### Q&A
 
-#### [Surge 开启共享模式](https://medium.com/@scomper/局域网其他设备共享上网-dd29e18853da#.6w19tdsh9)
+#### Surge 开启共享模式
 ````
 Surge 在增加了代理共享模式，只需要开启就能让 Wi-Fi 网络中的其他设备通过这台 iPhone 代理访问网络
 
@@ -394,11 +394,11 @@ ShadowsocksR (R)：http://omgib13x8.bkt.clouddn.com/ssr-win.7z
 
 ---
 
-### 教程 / 说明：
+#### 教程 / 说明：
 ````
-Surge for iOS：https://medium.com/@scomper/surge-配置文件-a1533c10e80b#.9fpdjn34f
+Surge for iOS：https://medium.com/@scomper/surge-配置文件-a1533c10e80b
     
-Surge for macOS：https://medium.com/@scomper/surge-for-mac-简明指南-f6f357b8f09c#.n55zdnvnd
+Surge for macOS：https://medium.com/@scomper/让人耳目一新的-surge-mac-2-0-bb7cf735b1b8
     
 Shadowrocket for iOS：http://matrix.sspai.com/p/c113cba0
     
@@ -408,7 +408,7 @@ SSR for Android：https://yhyy135.github.io/how-to-use-ssr-android/
 ````
 
 ---
-### 配置文件样例
+#### 配置文件样例
 ````
 # Surge Config Example (Chinese)
 # Version 2.0

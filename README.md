@@ -5,29 +5,23 @@
 本项目最早是基于 [scomper/surge.conf](https://gist.github.com/scomper/915b04a974f9e11952babfd0bbb241a8) 定制修改而来，现已形成独有风格。
 
 ---
-* [已支持应用](#application)
+* [支持应用](#application)
 	* Surge
 	* Shadowrocket
-	* [Quantumult](#https://raw.githubusercontent.com/lhie1/Surge/master/Quantumult.conf)
+	* Quantumult
 * [可实现功能](#function)
 * 导入方式
-    * [URL（精简版）](#url)
+    * [URL](#url)
     * [Workflow](#workflow)
     	* User Data
     	* Rule OTA
-    * [~~在线更新（暂弃）~~](https://github.com/lhie1/RuleList)
 * [证书的安装及信任](#mitm)
 * [Android SSR ACL](#android-ssr-acl)
 * [浏览器广告](#browser-ad)
 * [联系方式](#line)
 * [Q&A](#qa)
-	* [🍃 Proxy & 🍂 Domestic & 🍎 Only](#%EF%B8%8F-proxy---proxy---proxy)
-	* [🚀 混淆模式](#-混淆模式)
-	* [🔋 Surge 耗电](#-surge-耗电)
-	* [☑️ Set as System Proxy](#%EF%B8%8F-set-as-systemproxy)
-	* [📶 Surge for iOS 开启共享模式](#-surge-开启共享模式)
-	* [🏃 Auto](#-auto)
 * [客户端](#客户端有r标示表示支持-ssr)
+* [教程/说明](#教程-/-说明)
 * [配置文件样例](#配置文件样例)
 * [鸣谢](#鸣谢)
 * [License](#license)
@@ -66,24 +60,18 @@ Quantumult | [@WatanabeMayu](https://t.me/WatanabeMayu)
 
 ### URL
 
-精简版：
-
-用于`Surge/Shadowrcket_URL`导入方式，阉割了节点定制以及功能开关，其他部分大致相同
 ````
 Surge：https://raw.githubusercontent.com/lhie1/Surge/master/Surge.conf
 
 Shadowrocket：https://raw.githubusercontent.com/lhie1/Surge/master/Shadowrocket.conf
 ````
-导入后请务必[安装证书](#mitm)
-
-![](https://raw.githubusercontent.com/lhie1/Surge/master/images/URL.jpeg)
 
 ---
 
-### Workflow
+### Workflow（关注微信公众号：墙洞说；发送“Rule” 即可获取最新 User Data + Rule OTA）
 
 * [User Data](#user-data)
-    * 自定义[Proxy]节点
+    * [自定义[Proxy]节点](#proxy)
     * 自动根据[Proxy]内容生成[Proxy Group]
     * 自定义添加[Rule]规则
     * 自定义添加[Host]规则
@@ -91,36 +79,55 @@ Shadowrocket：https://raw.githubusercontent.com/lhie1/Surge/master/Shadowrocket
     * 自定义添加[SSID Setting]规则
     * 自定义添加 DNS
     * 自定义删除规则（All）
+    * 运行时检查更新
     * 生成证书
     * [Widget 策略](#widget-策略)
 * [Rule OTA](#rule-ota)
+    * [Module](#module)
+        * Ads
+        * mitm
     * [Special_Proxy](#special_proxy)
-        * [AuthKey](#authkey)
-        * [Google](#google)
-        * [Netflix](#netflix)
-        * [MytvSUPER](#mytvsuper)
-        * [Spotify](#spotify)
-    * Features_Module
-        * [Adblocker](#adblocker)
-        * [TestFlight](#testflinght)
-        * [Emoji](#emoji)
-        * [Youku](#youku)
+        * Netflix
+        * Spotify
+        * MytvSUPER
+        * LINE
     * 运行时检查更新并自动下载
     * 自动修复`module`模块地址
     * 更新规则
     * 生成规则
+    * 提交自定义规则
     * [安装证书](#mitm)
     * [常见问题](#workflow_qa)
 
-关注微信公众号：墙洞说；发送“Rule” 即可获取最新 User Data + Rule OTA
-
 ---
+
+### User Data
+
+#### Proxy
+
+* ##### Surge / Shadowrocket：
+````
+Proxy_name = custom,host.com,1234,rc4-md5,password,http://omgib13x8.bkt.clouddn.com/SSEncrypt.module
+````
+
+* ##### Surge：
+````
+Managed_url
+````
+
+* ##### Shadowrocket：
+````
+Proxy_name
+````
+
 
 #### Widget 策略
 
 ![](https://raw.githubusercontent.com/lhie1/Surge/master/images/Widget.JPG)
 
-#### Features_Module
+### Rule OTA
+
+#### Module
 * ##### Ads
 ````
 关闭此功能将不再屏蔽广告
@@ -133,24 +140,24 @@ Shadowrocket：https://raw.githubusercontent.com/lhie1/Surge/master/Shadowrocket
 ---
 
 #### Special_Proxy
-* ##### Google
-````
-某些服务器/节点访问`Google`将会出现验证码，开启此功能为`Google`单独选择一个专用节点
-````
-
 * ##### Netflix
 ````
-某些服务器/节点不可以观看`Netflix`，开启此功能为`Netflix`单独选择一个专用节点
-````
-
-* ##### MytvSUPRE
-````
-某些服务器/节点不可以观看`MytvSUPRE`，开启此功能为`MytvSUPRE`单独选择一个专用节点
+开启此功能为`Netflix`单独选择一个专用节点
 ````
 
 * ##### Spotify
 ````
-某些服务器/节点的`Spotify`的内容不同，开启此功能为`Spotify`单独选择一个专用节点
+开启此功能为`Spotify`单独选择一个专用节点
+````
+
+* ##### MytvSUPRE
+````
+开启此功能为`MytvSUPRE`单独选择一个专用节点
+````
+
+* ##### LINE
+````
+开启此功能为`LINE`单独选择一个专用节点
 ````
 ---
 
@@ -387,7 +394,7 @@ ShadowsocksR (R)：http://omgib13x8.bkt.clouddn.com/ssr-win.7z
 
 ---
 
-📋 教程 / 说明：
+### 教程 / 说明：
 ````
 Surge for iOS：https://medium.com/@scomper/surge-配置文件-a1533c10e80b#.9fpdjn34f
     
